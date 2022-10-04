@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MainModule
+    MainModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
