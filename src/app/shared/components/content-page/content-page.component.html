@@ -1,0 +1,22 @@
+<div class="content-page">
+    <nav>
+        <mat-toolbar color="primary">
+            <div>
+                <ng-content select="[left-item]"></ng-content>
+            </div>
+            <span class="example-spacer"></span>
+            <div>
+                <ng-content select="[center-item]"></ng-content>
+            </div>
+            <span class="example-spacer"></span>
+            <div>
+                <ng-content select="[right-item]"></ng-content>
+            </div>
+        </mat-toolbar>
+    </nav>
+    <article class="main-content">
+        <section class="main-content-section">
+            <ng-content select="[main-content]"></ng-content>
+        </section>
+    </article>
+</div>
