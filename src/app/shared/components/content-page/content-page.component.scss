@@ -1,5 +1,14 @@
 .content-page {
+    .content-page-navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
     .main-content {
+        margin-top: 60px;
         display: flex;
         justify-content: center;
 

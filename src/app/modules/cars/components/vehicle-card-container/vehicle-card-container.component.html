@@ -7,3 +7,12 @@
     "
   ></vehicle-card>
 </div>
+<section
+  class="empty-list flex-row justify-content-center"
+  *ngIf="
+    !((vehicleList$ | async) || [] | filterBrand: (textFilter$ | async) || '')
+      ?.length
+  "
+>
+  No hay elementos
+</section>
