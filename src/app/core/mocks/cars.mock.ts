@@ -1,10 +1,12 @@
 import { IRequestCar } from '../entities/interfaces/car.interface';
 
+const photo = 'https://material.angular.io/assets/img/examples/shiba2.jpg';
+
 export const CAR_LIST_MOCK: IRequestCar[] = [
     {
       id: 'id1',
       model: 'Stepway',
-      photo: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+      photo: 'https://cdn.group.renault.com/ren/co/vehicles/stepway/home/nuevo-renault-stepway-gris-cassiope.jpg.ximg.xsmall.jpg/7aa97083ea.jpg',
       year: 2018,
       brand: 'Renault',
       price: 32000,
@@ -18,7 +20,7 @@ export const CAR_LIST_MOCK: IRequestCar[] = [
     {
       id: 'id2',
       model: 'Gol',
-      photo: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+      photo: 'https://www.elcarrocolombiano.com/wp-content/uploads/2016/12/20161203-VOLKSWAGEN-GOL-GT-CONCEPT-01.jpg',
       year: 2020,
       brand: 'Volkswagen',
       price: 40000,
