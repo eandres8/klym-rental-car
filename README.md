@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+### TODO
+[ ] pipe to filter vehicle-cards subscribing with store
+    [X] create Pipe
+    [ ] add subscription to read input text filter
+[ ] directive to catch error with no image found
+[ ] create Empty component, when filter doesn't made match
+[ ] create details page
+    [ ] make basic structure
+    [ ] get param from url and search the car on store
+    [ ] render Data
+[ ] create Backend to make request
+[ ] fix all responsive styles

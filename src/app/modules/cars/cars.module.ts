@@ -7,6 +7,7 @@ import { DetailsPageComponent } from './pages/details-page/details-page.componen
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { InputFilterComponent } from './components/input-filter/input-filter.component';
 import { VehicleCardContainerComponent } from './components/vehicle-card-container/vehicle-card-container.component';
+import { FilterBrandPipe } from './pipes/filter-brand.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { VehicleCardContainerComponent } from './components/vehicle-card-contain
     MainPageComponent,
     InputFilterComponent,
     VehicleCardContainerComponent,
+    FilterBrandPipe,
   ],
   imports: [
     CommonModule,
