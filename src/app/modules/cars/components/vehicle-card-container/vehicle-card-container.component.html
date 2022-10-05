@@ -1,3 +1,9 @@
 <div class="flex-row flex-wrap">
-    <vehicle-card [vehicle]="item" *ngFor="let item of vehicleList | filterBrand:''"></vehicle-card>
+  <vehicle-card
+    [vehicle]="item"
+    *ngFor="
+      let item of (vehicleList$ | async) || []
+        | filterBrand: (textFilter$ | async) || ''
+    "
+  ></vehicle-card>
 </div>
