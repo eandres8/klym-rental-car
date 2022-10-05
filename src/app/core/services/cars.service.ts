@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { delay, of } from 'rxjs';
+import { delay, map, of } from 'rxjs';
 
-import { CAR_LIST_MOCK } from '../mocks/cars.mock';
+import JsonData from '../../../assets/data.json';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,8 @@ import { CAR_LIST_MOCK } from '../mocks/cars.mock';
 export class CarsService {
 
   public getCars() {
-    return of(CAR_LIST_MOCK).pipe(
+    return of(JsonData).pipe(
+      map(jsonData => jsonData.data),
       delay(1500)
     );
   }
