@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { IVehicleCard } from 'src/app/entities/interfaces/vehicle-card.interface';
+import { ICar } from 'src/app/entities/interfaces/car.interface';
 
 @Component({
   selector: 'vehicle-card-container',
@@ -9,7 +9,7 @@ import { IVehicleCard } from 'src/app/entities/interfaces/vehicle-card.interface
 })
 export class VehicleCardContainerComponent implements OnInit {
 
-  readonly vehicleList: IVehicleCard[] = [
+  readonly vehicleList: ICar[] = [
     {
       id: 'id1',
       model: 'Stepway',

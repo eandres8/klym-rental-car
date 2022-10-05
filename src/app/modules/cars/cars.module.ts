@@ -21,4 +21,4 @@ import { VehicleCardContainerComponent } from './components/vehicle-card-contain
     MaterialModule
   ]
 })
-export class MainModule { }
+export class CarsModule { }

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
-import { MainModule } from './modules/main/main.module';
+import { CarsModule } from './modules/cars/cars.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MainModule,
+    CarsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

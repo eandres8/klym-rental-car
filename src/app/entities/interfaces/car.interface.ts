@@ -1,4 +1,4 @@
-export interface IVehicleCard {
+export interface ICar {
     id: string;
     model: string;
     year: number;

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { IVehicleCard } from 'src/app/entities/interfaces/vehicle-card.interface';
+import { ICar } from 'src/app/entities/interfaces/car.interface';
 
 @Component({
   selector: 'vehicle-card',
@@ -9,7 +9,7 @@ import { IVehicleCard } from 'src/app/entities/interfaces/vehicle-card.interface
 })
 export class VehicleCardComponent implements OnInit {
 
-  @Input() vehicle: IVehicleCard | undefined;
+  @Input() vehicle: ICar | undefined;
 
   constructor() { }
 
