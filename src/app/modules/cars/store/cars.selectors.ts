@@ -15,3 +15,8 @@ export const selectTextFilter = createSelector(
     selectCarsState,
     (state: CarsState) => state.textFilter,
 );
+ 
+export const selectLoadingState = createSelector(
+    selectCarsState,
+    (state: CarsState) => state.isLoading,
+);

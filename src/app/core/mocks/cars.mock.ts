@@ -29,4 +29,4 @@ export const CAR_LIST_MOCK: IRequestCar[] = [
       updatedAt: 1664983317589,
       state: 'ACTIVE',
     },
-  ]
+  ];

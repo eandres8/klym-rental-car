@@ -28,14 +28,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ### TODO
-[ ] pipe to filter vehicle-cards subscribing with store
+[X] pipe to filter vehicle-cards subscribing with store
     [X] create Pipe
-    [ ] add subscription to read input text filter
+    [X] add subscription to read input text filter
+[X] create loader component
+[ ] load data from JSON file
 [ ] directive to catch error with no image found
 [ ] create Empty component, when filter doesn't made match
 [ ] create details page
     [ ] make basic structure
     [ ] get param from url and search the car on store
     [ ] render Data
-[ ] create Backend to make request
+    [ ] filter state by id with action
+[X] create Backend to make request
+    [X] create a mock request from of observable
 [ ] fix all responsive styles

@@ -1,5 +1,5 @@
 <div class="main-page">
-    <content-page>
+    <content-page [isLoading]="!!(isLoading$ | async)">
         <div center-item>
             <input-filter></input-filter>
         </div>

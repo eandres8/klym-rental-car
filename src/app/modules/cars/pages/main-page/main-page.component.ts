@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import { AppState } from 'src/app/app.store';
-import { requestCarsAction } from '../../store/cars.actions';
+import { requestCarsAction, startLoadingAction } from '../../store/cars.actions';
+import { selectLoadingState } from '../../store/cars.selectors';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-main-page',
@@ -11,12 +13,15 @@ import { requestCarsAction } from '../../store/cars.actions';
 })
 export class MainPageComponent implements OnInit {
 
+  isLoading$: Observable<boolean> = new Observable();
+
   constructor(
     private readonly store: Store<AppState>,
   ) { }
 
   ngOnInit(): void {
-    // replace by effect
+    this.isLoading$ = this.store.select(selectLoadingState);
+    this.store.dispatch(startLoadingAction());
     this.store.dispatch(requestCarsAction());
   }
 
