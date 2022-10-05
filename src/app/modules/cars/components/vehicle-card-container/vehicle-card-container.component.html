@@ -1,4 +1,4 @@
-<div class="flex-row flex-wrap">
+<section class="flex-row flex-wrap justify-content-center w-100">
   <vehicle-card
     [vehicle]="item"
     *ngFor="
@@ -6,7 +6,8 @@
         | filterBrand: (textFilter$ | async) || ''
     "
   ></vehicle-card>
-</div>
+</section>
+
 <section
   class="empty-list flex-row justify-content-center"
   *ngIf="
@@ -14,5 +15,6 @@
       ?.length
   "
 >
-  No hay elementos
+  <p>No hay elementos</p>
+  <mat-icon class="empty-list-icon">broken_image</mat-icon>
 </section>

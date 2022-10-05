@@ -1,5 +1,20 @@
+.vehicle-card-container {
+    width: 100%;
+}
+
 .empty-list {
     margin-top: 60px;
     font-size: 18px;
     color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .empty-list-icon {
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        margin-top: 1rem;
+    }
 }

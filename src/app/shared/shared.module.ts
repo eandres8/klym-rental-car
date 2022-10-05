@@ -5,12 +5,14 @@ import { MaterialModule } from '../material.module';
 import { VehicleCardComponent } from './components/vehicle-card/vehicle-card.component';
 import { ContentPageComponent } from './components/content-page/content-page.component';
 import { ErrorImageDirective } from './directives/error-image.directive';
+import { NavbarLogoComponent } from './components/navbar-logo/navbar-logo.component';
 
 @NgModule({
   declarations: [
     VehicleCardComponent,
     ContentPageComponent,
     ErrorImageDirective,
+    NavbarLogoComponent,
   ],
   imports: [
     CommonModule,
@@ -20,6 +22,7 @@ import { ErrorImageDirective } from './directives/error-image.directive';
     VehicleCardComponent,
     ContentPageComponent,
     ErrorImageDirective,
+    NavbarLogoComponent,
   ],
 })
 export class SharedModule { }

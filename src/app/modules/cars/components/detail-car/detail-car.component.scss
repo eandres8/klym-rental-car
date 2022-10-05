@@ -1,11 +1,29 @@
 .detail-car {
     padding: 1rem;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+
+    @media only screen and (min-width:320px) and (max-width:480px) {
+        flex-direction: column;
+
+        & .detail-car-image {
+
+            img {
+                max-width: 320px;
+                width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (min-width:480px) {
+        flex-direction: row;
+
+        & .detail-car-image, .detail-car-info {
+            width: 50%;
+        }
+    }
 
     .detail-car-image {
-        width: 50%;
-
         img {
             width: 100%;
         }
@@ -13,7 +31,6 @@
 
     .detail-car-info {
         padding: 1rem;
-        width: 50%;
         display: flex;
         flex-direction: column;
 

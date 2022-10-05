@@ -7,10 +7,17 @@
         border: none;
         border-radius: 5px 0 0 5px;
         outline: none;
-    }
 
-    input:focus {
-        width: 400px;
+        @media only screen and (min-width:320px) and (max-width:480px) {
+            width: 300px;
+        }
+        
+        @media only screen and (min-width:480px) {
+            &:focus {
+                width: 400px;
+            }
+        }
+        
     }
 
     .icon-search {

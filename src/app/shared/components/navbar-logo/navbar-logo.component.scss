@@ -1,0 +1,18 @@
+.navbar-logo {
+    display: flex;
+    align-items: center;
+
+    .navbar-logo-icon {
+        margin: 0 1rem;
+    }
+
+    @media only screen and (min-width:320px) and (max-width:480px) {
+        .navbar-logo-icon {
+            margin-right: 0;
+        }
+
+        span {
+            display: none;
+        }
+    }
+}
