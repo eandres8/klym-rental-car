@@ -13,6 +13,7 @@
                 <ng-content select="[right-item]"></ng-content>
             </div>
         </mat-toolbar>
+        <mat-progress-bar *ngIf="isLoading" mode="indeterminate" color="secondary"></mat-progress-bar>
     </nav>
     <article class="main-content">
         <section class="main-content-section">

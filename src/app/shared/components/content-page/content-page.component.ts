@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'content-page',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content-page.component.scss']
 })
 export class ContentPageComponent implements OnInit {
+
+  @Input() isLoading: boolean = false;
 
   constructor() { }
 
