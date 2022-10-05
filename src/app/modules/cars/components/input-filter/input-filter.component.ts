@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { Subscription } from 'rxjs';
+import { debounceTime, Subscription } from 'rxjs';
 import { AppState } from 'src/app/app.store';
 import { setTextFilterAction } from '../../store/cars.actions';
 
@@ -20,9 +20,11 @@ export class InputFilterComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    this.inputSubscription = this.inputControl.valueChanges.subscribe(value => {
-      this.store.dispatch(setTextFilterAction({ textFilter: value }));
-    });
+    this.inputSubscription = this.inputControl.valueChanges.pipe(
+      debounceTime(300)
+    ).subscribe(value => {
+        this.store.dispatch(setTextFilterAction({ textFilter: value }));
+      });
   }
 
   ngOnDestroy(): void {
