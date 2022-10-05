@@ -1,6 +1,6 @@
-import { ICar } from '../interfaces/car.interface';
+import { ICar, IRequestCar } from '../interfaces/car.interface';
 
-export class Car {
+export class Car implements ICar {
     constructor(
         public readonly id: string,
         public readonly model: string,
@@ -19,5 +19,11 @@ export class Car {
             car.brand || '',
             car.price || 0,
         );
+    }
+}
+
+export class CarMapper {
+    static mapFromRequest(request: IRequestCar[]) {
+        return request.map(item => Car.fromMap(item));
     }
 }

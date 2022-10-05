@@ -1,7 +1,7 @@
 import { createReducer, on } from '@ngrx/store';
 
 import { cleanCarsAction, setCarsAction, setTextFilterAction } from './cars.actions';
-import { ICar } from 'src/app/entities/interfaces/car.interface';
+import { ICar } from 'src/app/core/entities/interfaces/car.interface';
 
 export interface CarsState {
     cars: ICar[];

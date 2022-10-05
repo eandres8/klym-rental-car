@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { ICar } from 'src/app/entities/interfaces/car.interface';
+import { ICar } from 'src/app/core/entities/interfaces/car.interface';
 
 @Pipe({
   name: 'filterBrand'

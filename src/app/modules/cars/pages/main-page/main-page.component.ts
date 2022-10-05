@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import { AppState } from 'src/app/app.store';
-import { CAR_LIST_MOCK } from 'src/app/mocks/cars.mock';
-import { setCarsAction } from '../../cars.actions';
+import { requestCarsAction } from '../../store/cars.actions';
 
 @Component({
   selector: 'app-main-page',
@@ -18,7 +17,7 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
     // replace by effect
-    this.store.dispatch(setCarsAction({ cars: CAR_LIST_MOCK }));
+    this.store.dispatch(requestCarsAction());
   }
 
 }

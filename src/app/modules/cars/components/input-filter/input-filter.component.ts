@@ -3,7 +3,7 @@ import { FormControl } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
 import { AppState } from 'src/app/app.store';
-import { setTextFilterAction } from '../../cars.actions';
+import { setTextFilterAction } from '../../store/cars.actions';
 
 @Component({
   selector: 'input-filter',

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { ICar } from 'src/app/entities/interfaces/car.interface';
+import { ICar } from 'src/app/core/entities/interfaces/car.interface';
 
 @Component({
   selector: 'vehicle-card',

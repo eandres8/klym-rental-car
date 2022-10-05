@@ -2,9 +2,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { EMPTY, empty, Observable, of, startWith, Subscription } from 'rxjs';
 
-import { ICar } from 'src/app/entities/interfaces/car.interface';
+import { ICar } from 'src/app/core/entities/interfaces/car.interface';
 import { AppState } from 'src/app/app.store';
-import { selectCarList, selectTextFilter } from '../../cars.selectors';
+import { selectCarList, selectTextFilter } from '../../store/cars.selectors';
 
 @Component({
   selector: 'vehicle-card-container',
