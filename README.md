@@ -29,5 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### TODO
 [ ] load data from JSON file
-[ ] ordered data by brand
 [ ] fix all responsive styles

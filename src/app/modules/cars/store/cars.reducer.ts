@@ -27,6 +27,7 @@ export const carsReducer = createReducer(
     ...state,
     cars: [...cars],
     isLoading: false,
+    textFilter: '',
   })),
   on(cleanCarsAction, (state) => ({ ...state, cars: [] })),
   on(setTextFilterAction, (state: CarsState, { textFilter }) => ({

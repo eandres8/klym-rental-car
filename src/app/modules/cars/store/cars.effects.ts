@@ -16,6 +16,7 @@ export class CarsEffects {
     mergeMap(() => this.carsService.getCars()
       .pipe(
         map(request => CarMapper.mapFromRequest(request as IRequestCar[])),
+        map(cars => CarMapper.orderByBrand(cars)),
         map(cars => setCarsAction({ cars })),
         catchError(() => EMPTY)
       ))
