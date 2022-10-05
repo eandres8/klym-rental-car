@@ -4,6 +4,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 const moduleList = [
   MatToolbarModule,
@@ -11,6 +13,8 @@ const moduleList = [
   MatInputModule,
   MatCardModule,
   MatProgressBarModule,
+  MatButtonModule,
+  MatSnackBarModule,
 ];
 
 @NgModule({

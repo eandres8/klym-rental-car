@@ -1,1 +1,18 @@
-<p>details-page works!</p>
+<div class="details-page">
+    <content-page>
+        <div left-item>
+            <button mat-icon-button aria-label="Back to previous page" (click)="backButton()">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+        </div>
+        <div right-item class="flex-row align-items-center">
+            <mat-icon>directions_car</mat-icon>
+            <span>Renting Car</span>
+        </div>
+        <div main-content>
+            <div>
+                <detail-car [vehicle]="vehicle"></detail-car>
+            </div>
+        </div>
+    </content-page>
+</div>

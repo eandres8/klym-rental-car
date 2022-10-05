@@ -1,3 +1,5 @@
+@import "./colors.scss";
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -22,4 +24,8 @@
 
 .align-items-center {
     align-items: center;
+}
+
+.text-primary {
+    color: $primary;
 }

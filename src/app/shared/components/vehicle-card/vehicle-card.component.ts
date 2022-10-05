@@ -17,7 +17,6 @@ export class VehicleCardComponent {
   ) { }
   
   public redirectTo() {
-    console.log(`/details/${this.vehicle?.id}`);
     this.router.navigate([`/details/${this.vehicle?.id}`]);
   }
 
