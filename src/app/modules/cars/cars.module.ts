@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { MaterialModule } from 'src/app/material.module';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { DetailsPageComponent } from './details-page/details-page.component';
-import { MainPageComponent } from './main-page/main-page.component';
+import { DetailsPageComponent } from './pages/details-page/details-page.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 import { InputFilterComponent } from './components/input-filter/input-filter.component';
 import { VehicleCardContainerComponent } from './components/vehicle-card-container/vehicle-card-container.component';
 
@@ -19,6 +19,6 @@ import { VehicleCardContainerComponent } from './components/vehicle-card-contain
     CommonModule,
     SharedModule,
     MaterialModule
-  ]
+  ],
 })
 export class CarsModule { }

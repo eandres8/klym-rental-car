@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 
 import { AppState } from 'src/app/app.store';
 import { CAR_LIST_MOCK } from 'src/app/mocks/cars.mock';
-import { setCarsAction } from '../cars.actions';
+import { setCarsAction } from '../../cars.actions';
 
 @Component({
   selector: 'app-main-page',
